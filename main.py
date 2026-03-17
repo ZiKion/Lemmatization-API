@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.exceptions import RequestValidationError
-from fastapi.responses import JSONResponse
+from starlette.responses import JSONResponse
 
 from api.routes.lemmatization import router as lemmatization_router
 from schemas.error import build_aip_error
