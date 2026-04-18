@@ -1,0 +1,4 @@
+fastapi[standard]
+spacy
+en-core-web-md
+pytest
