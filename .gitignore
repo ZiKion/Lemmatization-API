@@ -1,94 +1,65 @@
-# Python virtual environments
+# OS
+.DS_Store
+
+# Python bytecode/cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.so
+
+# Python tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.tox/
+
+# Coverage and test reports
+.coverage
+.coverage.*
+htmlcov/
+
+# Virtual environments
 .venv/
 venv/
 env/
 ENV/
-.env
 
-# Python cache and compiled files
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
+# Environment files
+.env
+.env.*
+
+# Build artifacts
 build/
-develop-eggs/
 dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
 *.egg-info/
-.installed.cfg
+.eggs/
 *.egg
 
-# Testing
-.pytest_cache/
-.coverage
-.coverage.*
-htmlcov/
-.tox/
-.hypothesis/
+# Logs
+*.log
+logs/
+backend/logs/
 
-# IDE and editor
+# IDE / editor
 .vscode/
 .idea/
 *.swp
 *.swo
 *.swn
 *~
-.DS_Store
 .project
 .pydevproject
 .settings/
 
-# Poetry and dependency management
+# Dependency manager caches/locks (optional for this repo)
+.uv-cache/
 poetry.lock
 Pipfile.lock
 
-# pip logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# uv cache
-.uv-cache/
-# OS
-.DS_Store
-
-# Python
-__pycache__/
-*.py[cod]
-*.pyo
-*.pyd
-*.so
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-.coverage
-.coverage.*
-htmlcov/
-*.log
-
-# Virtual environments
-.venv/
-venv/
-env/
-
-# Build artifacts
-build/
-dist/
-*.egg-info/
-
-# IDE/editor
-.vscode/
-.idea/
-
-# Frontend / Node
+# Frontend / Node artifacts (keep in case frontend is added)
 node_modules/
 npm-debug.log*
 yarn-debug.log*
@@ -96,12 +67,3 @@ yarn-error.log*
 pnpm-debug.log*
 frontend/dist/
 frontend/.vite/
-
-# Env files
-.env
-.env.*
-
-# Test output
-backend/.pytest_cache/
-logs/
-backend/logs/
